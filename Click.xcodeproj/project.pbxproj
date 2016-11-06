@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE18D4001ACA6E0A001F68FD /* GameData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE18D3FE1ACA6E0A001F68FD /* GameData.xcdatamodeld */; };
+		DE18D4021ACA7103001F68FD /* GameLevelStatics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE18D4011ACA7103001F68FD /* GameLevelStatics.plist */; };
+		DE3C75831B776A4A00F33915 /* ClickInGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE3C75821B776A4A00F33915 /* ClickInGame.mp3 */; };
+		DE3E97141AFB51C6005077C1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97121AFB51C6005077C1 /* Bolts.framework */; };
+		DE3E97151AFB51C6005077C1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97131AFB51C6005077C1 /* Parse.framework */; };
+		DE3E97171AFB528C005077C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97161AFB528C005077C1 /* AudioToolbox.framework */; };
+		DE3E97191AFB5294005077C1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97181AFB5294005077C1 /* CFNetwork.framework */; };
+		DE3E971B1AFB529A005077C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E971A1AFB529A005077C1 /* CoreGraphics.framework */; };
+		DE3E971D1AFB52A1005077C1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E971C1AFB52A0005077C1 /* CoreLocation.framework */; };
+		DE3E971F1AFB52A8005077C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E971E1AFB52A8005077C1 /* MobileCoreServices.framework */; };
+		DE3E97211AFB52AF005077C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97201AFB52AF005077C1 /* QuartzCore.framework */; };
+		DE3E97231AFB52B8005077C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97221AFB52B7005077C1 /* Security.framework */; };
+		DE3E97271AFB52D0005077C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97261AFB52D0005077C1 /* SystemConfiguration.framework */; };
+		DE3E97291AFB52DB005077C1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E97281AFB52DB005077C1 /* libz.dylib */; };
+		DE3E972B1AFB52E6005077C1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E972A1AFB52E6005077C1 /* libsqlite3.dylib */; };
+		DE59F6191ACF37E1000DA5D4 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59F6181ACF37E1000DA5D4 /* StatsViewController.swift */; };
+		DE59F61B1ACF3F05000DA5D4 /* LevelStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59F61A1ACF3F05000DA5D4 /* LevelStatsViewController.swift */; };
+		DE59F6211ACF4113000DA5D4 /* GameLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59F6201ACF4113000DA5D4 /* GameLevels.swift */; };
+		DE7E43C21AF6418600536CA0 /* LinRegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E43C11AF6418600536CA0 /* LinRegModel.swift */; };
+		DEA25FDE1AC0B219001F0B80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA25FDD1AC0B219001F0B80 /* AppDelegate.swift */; };
+		DEA25FE01AC0B219001F0B80 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEA25FDF1AC0B219001F0B80 /* GameScene.sks */; };
+		DEA25FE21AC0B219001F0B80 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA25FE11AC0B219001F0B80 /* GameScene.swift */; };
+		DEA25FE41AC0B219001F0B80 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA25FE31AC0B219001F0B80 /* GameViewController.swift */; };
+		DEA25FE91AC0B219001F0B80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA25FE81AC0B219001F0B80 /* Images.xcassets */; };
+		DEA25FF81AC0B219001F0B80 /* ClickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA25FF71AC0B219001F0B80 /* ClickTests.swift */; };
+		DEA260061AC147C3001F0B80 /* CoordinateRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA260051AC147C3001F0B80 /* CoordinateRecorder.swift */; };
+		DEAC26EE1AF647F600AD5702 /* imshow.py in Resources */ = {isa = PBXBuildFile; fileRef = DEAC26D01AF647F600AD5702 /* imshow.py */; };
+		DEAC26EF1AF647F600AD5702 /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D11AF647F600AD5702 /* io.swift */; };
+		DEAC26F01AF647F600AD5702 /* machine_learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D31AF647F600AD5702 /* machine_learning.swift */; };
+		DEAC26F11AF647F600AD5702 /* m-complex-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D51AF647F600AD5702 /* m-complex-math.swift */; };
+		DEAC26F21AF647F600AD5702 /* m-helper-functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D61AF647F600AD5702 /* m-helper-functions.swift */; };
+		DEAC26F31AF647F600AD5702 /* m-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D71AF647F600AD5702 /* m-image.swift */; };
+		DEAC26F41AF647F600AD5702 /* m-initing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D81AF647F600AD5702 /* m-initing.swift */; };
+		DEAC26F51AF647F600AD5702 /* m-matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26D91AF647F600AD5702 /* m-matrix.swift */; };
+		DEAC26F61AF647F600AD5702 /* m-operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26DA1AF647F600AD5702 /* m-operators.swift */; };
+		DEAC26F71AF647F600AD5702 /* m-simple-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26DB1AF647F600AD5702 /* m-simple-math.swift */; };
+		DEAC26F81AF647F600AD5702 /* complex-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26DD1AF647F600AD5702 /* complex-math.swift */; };
+		DEAC26F91AF647F600AD5702 /* helper-functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26DE1AF647F600AD5702 /* helper-functions.swift */; };
+		DEAC26FA1AF647F600AD5702 /* initing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26DF1AF647F600AD5702 /* initing.swift */; };
+		DEAC26FB1AF647F600AD5702 /* ndarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E01AF647F600AD5702 /* ndarray.swift */; };
+		DEAC26FC1AF647F600AD5702 /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E11AF647F600AD5702 /* operators.swift */; };
+		DEAC26FD1AF647F600AD5702 /* simple-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E21AF647F600AD5702 /* simple-math.swift */; };
+		DEAC26FE1AF647F600AD5702 /* numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E31AF647F600AD5702 /* numbers.swift */; };
+		DEAC26FF1AF647F600AD5702 /* conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E51AF647F600AD5702 /* conversion.swift */; };
+		DEAC27001AF647F600AD5702 /* machine_learning.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E61AF647F600AD5702 /* machine_learning.mm */; };
+		DEAC27011AF647F600AD5702 /* math.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E71AF647F600AD5702 /* math.m */; };
+		DEAC27021AF647F600AD5702 /* opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26E91AF647F600AD5702 /* opencv.mm */; };
+		DEAC27031AF647F600AD5702 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAC26EA1AF647F600AD5702 /* opencv2.framework */; };
+		DEAC27041AF647F600AD5702 /* operations-and-indexing.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26EB1AF647F600AD5702 /* operations-and-indexing.m */; };
+		DEAC27051AF647F600AD5702 /* ScalarArithmetic-bleed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC26ED1AF647F600AD5702 /* ScalarArithmetic-bleed.swift */; };
+		DEAC27091AF674D200AD5702 /* AIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC27081AF674D200AD5702 /* AIManager.swift */; };
+		DEC981F61AC2B0D600DD4C20 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC981F51AC2B0D600DD4C20 /* MenuViewController.swift */; };
+		DEC981F81AC2B2FA00DD4C20 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC981F71AC2B2FA00DD4C20 /* AboutViewController.swift */; };
+		DEC981FA1AC2C8C300DD4C20 /* ClickEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC981F91AC2C8C300DD4C20 /* ClickEvent.swift */; };
+		DED6FD0B1B86FA1400DB031F /* img in Resources */ = {isa = PBXBuildFile; fileRef = DED6FD0A1B86FA1400DB031F /* img */; };
+		DED6FD0D1B8700E900DB031F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED6FD0C1B8700E900DB031F /* LaunchScreen.xib */; };
+		DEE4CD611C9295E7008B98FF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAC27061AF6482A00AD5702 /* Accelerate.framework */; };
+		DEEE00A61B739BDA00EA5157 /* ClickMain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEEE00A51B739BDA00EA5157 /* ClickMain.mp3 */; };
+		DEEE00AA1B73BF7500EA5157 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE00A91B73BF7500EA5157 /* EndViewController.swift */; };
+		DEEE00AC1B73D6BF00EA5157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEE00AB1B73D6BF00EA5157 /* Main.storyboard */; };
+		DEEE00AE1B775F0D00EA5157 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE00AD1B775F0D00EA5157 /* AudioManager.swift */; };
+		DEF9B35F1B007EAD00007AFC /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF9B35E1B007EAD00007AFC /* UIDevice.swift */; };
+		DEF9B3611B00850A00007AFC /* DeviceIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF9B3601B00850A00007AFC /* DeviceIDManager.swift */; };
+		DEFE52131AC83E1100198E69 /* LevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEFE52121AC83E1100198E69 /* LevelScene.sks */; };
+		DEFE52151AC83E5B00198E69 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE52141AC83E5B00198E69 /* LevelScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEA25FF21AC0B219001F0B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA25FD01AC0B219001F0B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA25FD71AC0B219001F0B80;
+			remoteInfo = Click;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE18D3FF1ACA6E0A001F68FD /* GameData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameData.xcdatamodel; sourceTree = "<group>"; };
+		DE18D4011ACA7103001F68FD /* GameLevelStatics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameLevelStatics.plist; sourceTree = "<group>"; };
+		DE3C75821B776A4A00F33915 /* ClickInGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClickInGame.mp3; sourceTree = "<group>"; };
+		DE3E97121AFB51C6005077C1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DE3E97131AFB51C6005077C1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DE3E97161AFB528C005077C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DE3E97181AFB5294005077C1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DE3E971A1AFB529A005077C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE3E971C1AFB52A0005077C1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DE3E971E1AFB52A8005077C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DE3E97201AFB52AF005077C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DE3E97221AFB52B7005077C1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DE3E97261AFB52D0005077C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DE3E97281AFB52DB005077C1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DE3E972A1AFB52E6005077C1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DE59F6181ACF37E1000DA5D4 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		DE59F61A1ACF3F05000DA5D4 /* LevelStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelStatsViewController.swift; sourceTree = "<group>"; };
+		DE59F6201ACF4113000DA5D4 /* GameLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLevels.swift; sourceTree = "<group>"; };
+		DE7E43C11AF6418600536CA0 /* LinRegModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinRegModel.swift; sourceTree = "<group>"; };
+		DEA25FD81AC0B219001F0B80 /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA25FDC1AC0B219001F0B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA25FDD1AC0B219001F0B80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEA25FDF1AC0B219001F0B80 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DEA25FE11AC0B219001F0B80 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DEA25FE31AC0B219001F0B80 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DEA25FE81AC0B219001F0B80 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEA25FF11AC0B219001F0B80 /* ClickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA25FF61AC0B219001F0B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA25FF71AC0B219001F0B80 /* ClickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickTests.swift; sourceTree = "<group>"; };
+		DEA260051AC147C3001F0B80 /* CoordinateRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateRecorder.swift; sourceTree = "<group>"; };
+		DEAC26D01AF647F600AD5702 /* imshow.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = imshow.py; sourceTree = "<group>"; };
+		DEAC26D11AF647F600AD5702 /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
+		DEAC26D31AF647F600AD5702 /* machine_learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = machine_learning.swift; sourceTree = "<group>"; };
+		DEAC26D51AF647F600AD5702 /* m-complex-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-complex-math.swift"; sourceTree = "<group>"; };
+		DEAC26D61AF647F600AD5702 /* m-helper-functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-helper-functions.swift"; sourceTree = "<group>"; };
+		DEAC26D71AF647F600AD5702 /* m-image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-image.swift"; sourceTree = "<group>"; };
+		DEAC26D81AF647F600AD5702 /* m-initing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-initing.swift"; sourceTree = "<group>"; };
+		DEAC26D91AF647F600AD5702 /* m-matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-matrix.swift"; sourceTree = "<group>"; };
+		DEAC26DA1AF647F600AD5702 /* m-operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-operators.swift"; sourceTree = "<group>"; };
+		DEAC26DB1AF647F600AD5702 /* m-simple-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-simple-math.swift"; sourceTree = "<group>"; };
+		DEAC26DD1AF647F600AD5702 /* complex-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "complex-math.swift"; sourceTree = "<group>"; };
+		DEAC26DE1AF647F600AD5702 /* helper-functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "helper-functions.swift"; sourceTree = "<group>"; };
+		DEAC26DF1AF647F600AD5702 /* initing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initing.swift; sourceTree = "<group>"; };
+		DEAC26E01AF647F600AD5702 /* ndarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ndarray.swift; sourceTree = "<group>"; };
+		DEAC26E11AF647F600AD5702 /* operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
+		DEAC26E21AF647F600AD5702 /* simple-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "simple-math.swift"; sourceTree = "<group>"; };
+		DEAC26E31AF647F600AD5702 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numbers.swift; sourceTree = "<group>"; };
+		DEAC26E51AF647F600AD5702 /* conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversion.swift; sourceTree = "<group>"; };
+		DEAC26E61AF647F600AD5702 /* machine_learning.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = machine_learning.mm; sourceTree = "<group>"; };
+		DEAC26E71AF647F600AD5702 /* math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = math.m; sourceTree = "<group>"; };
+		DEAC26E81AF647F600AD5702 /* OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCV.h; sourceTree = "<group>"; };
+		DEAC26E91AF647F600AD5702 /* opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencv.mm; sourceTree = "<group>"; };
+		DEAC26EA1AF647F600AD5702 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		DEAC26EB1AF647F600AD5702 /* operations-and-indexing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "operations-and-indexing.m"; sourceTree = "<group>"; };
+		DEAC26EC1AF647F600AD5702 /* swix-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swix-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEAC26ED1AF647F600AD5702 /* ScalarArithmetic-bleed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScalarArithmetic-bleed.swift"; sourceTree = "<group>"; };
+		DEAC27061AF6482A00AD5702 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DEAC27081AF674D200AD5702 /* AIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIManager.swift; sourceTree = "<group>"; };
+		DEC981F51AC2B0D600DD4C20 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DEC981F71AC2B2FA00DD4C20 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		DEC981F91AC2C8C300DD4C20 /* ClickEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickEvent.swift; sourceTree = "<group>"; };
+		DED6FD0A1B86FA1400DB031F /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		DED6FD0C1B8700E900DB031F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		DEEE00A51B739BDA00EA5157 /* ClickMain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClickMain.mp3; sourceTree = "<group>"; };
+		DEEE00A91B73BF7500EA5157 /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		DEEE00AB1B73D6BF00EA5157 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DEEE00AD1B775F0D00EA5157 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		DEF9B35E1B007EAD00007AFC /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		DEF9B3601B00850A00007AFC /* DeviceIDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceIDManager.swift; sourceTree = "<group>"; };
+		DEFE52121AC83E1100198E69 /* LevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene.sks; sourceTree = "<group>"; };
+		DEFE52141AC83E5B00198E69 /* LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEA25FD51AC0B219001F0B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE4CD611C9295E7008B98FF /* Accelerate.framework in Frameworks */,
+				DE3E972B1AFB52E6005077C1 /* libsqlite3.dylib in Frameworks */,
+				DE3E97291AFB52DB005077C1 /* libz.dylib in Frameworks */,
+				DE3E97271AFB52D0005077C1 /* SystemConfiguration.framework in Frameworks */,
+				DE3E97231AFB52B8005077C1 /* Security.framework in Frameworks */,
+				DE3E97211AFB52AF005077C1 /* QuartzCore.framework in Frameworks */,
+				DE3E971F1AFB52A8005077C1 /* MobileCoreServices.framework in Frameworks */,
+				DE3E971D1AFB52A1005077C1 /* CoreLocation.framework in Frameworks */,
+				DE3E971B1AFB529A005077C1 /* CoreGraphics.framework in Frameworks */,
+				DE3E97191AFB5294005077C1 /* CFNetwork.framework in Frameworks */,
+				DE3E97171AFB528C005077C1 /* AudioToolbox.framework in Frameworks */,
+				DE3E97141AFB51C6005077C1 /* Bolts.framework in Frameworks */,
+				DE3E97151AFB51C6005077C1 /* Parse.framework in Frameworks */,
+				DEAC27031AF647F600AD5702 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA25FEE1AC0B219001F0B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEA25FCF1AC0B219001F0B80 = {
+			isa = PBXGroup;
+			children = (
+				DE3E972A1AFB52E6005077C1 /* libsqlite3.dylib */,
+				DE3E97281AFB52DB005077C1 /* libz.dylib */,
+				DE3E97261AFB52D0005077C1 /* SystemConfiguration.framework */,
+				DE3E97221AFB52B7005077C1 /* Security.framework */,
+				DE3E97201AFB52AF005077C1 /* QuartzCore.framework */,
+				DE3E971E1AFB52A8005077C1 /* MobileCoreServices.framework */,
+				DE3E971C1AFB52A0005077C1 /* CoreLocation.framework */,
+				DE3E971A1AFB529A005077C1 /* CoreGraphics.framework */,
+				DE3E97181AFB5294005077C1 /* CFNetwork.framework */,
+				DE3E97161AFB528C005077C1 /* AudioToolbox.framework */,
+				DEAC27061AF6482A00AD5702 /* Accelerate.framework */,
+				DE3E97121AFB51C6005077C1 /* Bolts.framework */,
+				DE3E97131AFB51C6005077C1 /* Parse.framework */,
+				DEA25FDA1AC0B219001F0B80 /* Click */,
+				DEA25FF41AC0B219001F0B80 /* ClickTests */,
+				DEA25FD91AC0B219001F0B80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEA25FD91AC0B219001F0B80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA25FD81AC0B219001F0B80 /* Click.app */,
+				DEA25FF11AC0B219001F0B80 /* ClickTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA25FDA1AC0B219001F0B80 /* Click */ = {
+			isa = PBXGroup;
+			children = (
+				DEEE00AB1B73D6BF00EA5157 /* Main.storyboard */,
+				DED6FD0C1B8700E900DB031F /* LaunchScreen.xib */,
+				DE3C75821B776A4A00F33915 /* ClickInGame.mp3 */,
+				DEEE00A51B739BDA00EA5157 /* ClickMain.mp3 */,
+				DEA260041AC1472F001F0B80 /* Model */,
+				DEA25FDD1AC0B219001F0B80 /* AppDelegate.swift */,
+				DEA25FDF1AC0B219001F0B80 /* GameScene.sks */,
+				DEA25FE11AC0B219001F0B80 /* GameScene.swift */,
+				DEFE52121AC83E1100198E69 /* LevelScene.sks */,
+				DEFE52141AC83E5B00198E69 /* LevelScene.swift */,
+				DEA25FE31AC0B219001F0B80 /* GameViewController.swift */,
+				DEAC26CF1AF647F600AD5702 /* swix */,
+				DEA25FE81AC0B219001F0B80 /* Images.xcassets */,
+				DED6FD0A1B86FA1400DB031F /* img */,
+				DEA25FDB1AC0B219001F0B80 /* Supporting Files */,
+				DEC981F51AC2B0D600DD4C20 /* MenuViewController.swift */,
+				DEC981F71AC2B2FA00DD4C20 /* AboutViewController.swift */,
+				DE18D3FE1ACA6E0A001F68FD /* GameData.xcdatamodeld */,
+				DE59F6201ACF4113000DA5D4 /* GameLevels.swift */,
+				DE18D4011ACA7103001F68FD /* GameLevelStatics.plist */,
+				DE59F6181ACF37E1000DA5D4 /* StatsViewController.swift */,
+				DE59F61A1ACF3F05000DA5D4 /* LevelStatsViewController.swift */,
+				DEAC27081AF674D200AD5702 /* AIManager.swift */,
+				DEEE00A91B73BF7500EA5157 /* EndViewController.swift */,
+				DEEE00AD1B775F0D00EA5157 /* AudioManager.swift */,
+			);
+			path = Click;
+			sourceTree = "<group>";
+		};
+		DEA25FDB1AC0B219001F0B80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEA25FDC1AC0B219001F0B80 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEA25FF41AC0B219001F0B80 /* ClickTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEA25FF71AC0B219001F0B80 /* ClickTests.swift */,
+				DEA25FF51AC0B219001F0B80 /* Supporting Files */,
+			);
+			path = ClickTests;
+			sourceTree = "<group>";
+		};
+		DEA25FF51AC0B219001F0B80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEA25FF61AC0B219001F0B80 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEA260041AC1472F001F0B80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE7E43C11AF6418600536CA0 /* LinRegModel.swift */,
+				DEA260051AC147C3001F0B80 /* CoordinateRecorder.swift */,
+				DEC981F91AC2C8C300DD4C20 /* ClickEvent.swift */,
+				DEF9B35E1B007EAD00007AFC /* UIDevice.swift */,
+				DEF9B3601B00850A00007AFC /* DeviceIDManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DEAC26CF1AF647F600AD5702 /* swix */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC26D01AF647F600AD5702 /* imshow.py */,
+				DEAC26D11AF647F600AD5702 /* io.swift */,
+				DEAC26D21AF647F600AD5702 /* machine_learning */,
+				DEAC26D41AF647F600AD5702 /* matrix */,
+				DEAC26DC1AF647F600AD5702 /* ndarray */,
+				DEAC26E31AF647F600AD5702 /* numbers.swift */,
+				DEAC26E41AF647F600AD5702 /* objc */,
+				DEAC26ED1AF647F600AD5702 /* ScalarArithmetic-bleed.swift */,
+			);
+			path = swix;
+			sourceTree = "<group>";
+		};
+		DEAC26D21AF647F600AD5702 /* machine_learning */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC26D31AF647F600AD5702 /* machine_learning.swift */,
+			);
+			path = machine_learning;
+			sourceTree = "<group>";
+		};
+		DEAC26D41AF647F600AD5702 /* matrix */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC26D51AF647F600AD5702 /* m-complex-math.swift */,
+				DEAC26D61AF647F600AD5702 /* m-helper-functions.swift */,
+				DEAC26D71AF647F600AD5702 /* m-image.swift */,
+				DEAC26D81AF647F600AD5702 /* m-initing.swift */,
+				DEAC26D91AF647F600AD5702 /* m-matrix.swift */,
+				DEAC26DA1AF647F600AD5702 /* m-operators.swift */,
+				DEAC26DB1AF647F600AD5702 /* m-simple-math.swift */,
+			);
+			path = matrix;
+			sourceTree = "<group>";
+		};
+		DEAC26DC1AF647F600AD5702 /* ndarray */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC26DD1AF647F600AD5702 /* complex-math.swift */,
+				DEAC26DE1AF647F600AD5702 /* helper-functions.swift */,
+				DEAC26DF1AF647F600AD5702 /* initing.swift */,
+				DEAC26E01AF647F600AD5702 /* ndarray.swift */,
+				DEAC26E11AF647F600AD5702 /* operators.swift */,
+				DEAC26E21AF647F600AD5702 /* simple-math.swift */,
+			);
+			path = ndarray;
+			sourceTree = "<group>";
+		};
+		DEAC26E41AF647F600AD5702 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC26E51AF647F600AD5702 /* conversion.swift */,
+				DEAC26E61AF647F600AD5702 /* machine_learning.mm */,
+				DEAC26E71AF647F600AD5702 /* math.m */,
+				DEAC26E81AF647F600AD5702 /* OpenCV.h */,
+				DEAC26E91AF647F600AD5702 /* opencv.mm */,
+				DEAC26EA1AF647F600AD5702 /* opencv2.framework */,
+				DEAC26EB1AF647F600AD5702 /* operations-and-indexing.m */,
+				DEAC26EC1AF647F600AD5702 /* swix-Bridging-Header.h */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEA25FD71AC0B219001F0B80 /* Click */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA25FFB1AC0B219001F0B80 /* Build configuration list for PBXNativeTarget "Click" */;
+			buildPhases = (
+				DEA25FD41AC0B219001F0B80 /* Sources */,
+				DEA25FD51AC0B219001F0B80 /* Frameworks */,
+				DEA25FD61AC0B219001F0B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Click;
+			productName = Click;
+			productReference = DEA25FD81AC0B219001F0B80 /* Click.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEA25FF01AC0B219001F0B80 /* ClickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA25FFE1AC0B219001F0B80 /* Build configuration list for PBXNativeTarget "ClickTests" */;
+			buildPhases = (
+				DEA25FED1AC0B219001F0B80 /* Sources */,
+				DEA25FEE1AC0B219001F0B80 /* Frameworks */,
+				DEA25FEF1AC0B219001F0B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA25FF31AC0B219001F0B80 /* PBXTargetDependency */,
+			);
+			name = ClickTests;
+			productName = ClickTests;
+			productReference = DEA25FF11AC0B219001F0B80 /* ClickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEA25FD01AC0B219001F0B80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = OBD;
+				TargetAttributes = {
+					DEA25FD71AC0B219001F0B80 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = WQ65PJ26MP;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					DEA25FF01AC0B219001F0B80 = {
+						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
+						TestTargetID = DEA25FD71AC0B219001F0B80;
+					};
+				};
+			};
+			buildConfigurationList = DEA25FD31AC0B219001F0B80 /* Build configuration list for PBXProject "Click" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEA25FCF1AC0B219001F0B80;
+			productRefGroup = DEA25FD91AC0B219001F0B80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEA25FD71AC0B219001F0B80 /* Click */,
+				DEA25FF01AC0B219001F0B80 /* ClickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEA25FD61AC0B219001F0B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED6FD0B1B86FA1400DB031F /* img in Resources */,
+				DEFE52131AC83E1100198E69 /* LevelScene.sks in Resources */,
+				DEA25FE91AC0B219001F0B80 /* Images.xcassets in Resources */,
+				DE3C75831B776A4A00F33915 /* ClickInGame.mp3 in Resources */,
+				DED6FD0D1B8700E900DB031F /* LaunchScreen.xib in Resources */,
+				DEEE00A61B739BDA00EA5157 /* ClickMain.mp3 in Resources */,
+				DEA25FE01AC0B219001F0B80 /* GameScene.sks in Resources */,
+				DEEE00AC1B73D6BF00EA5157 /* Main.storyboard in Resources */,
+				DE18D4021ACA7103001F68FD /* GameLevelStatics.plist in Resources */,
+				DEAC26EE1AF647F600AD5702 /* imshow.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA25FEF1AC0B219001F0B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEA25FD41AC0B219001F0B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE59F6211ACF4113000DA5D4 /* GameLevels.swift in Sources */,
+				DEAC26FF1AF647F600AD5702 /* conversion.swift in Sources */,
+				DEAC26F71AF647F600AD5702 /* m-simple-math.swift in Sources */,
+				DEC981F81AC2B2FA00DD4C20 /* AboutViewController.swift in Sources */,
+				DE59F6191ACF37E1000DA5D4 /* StatsViewController.swift in Sources */,
+				DE7E43C21AF6418600536CA0 /* LinRegModel.swift in Sources */,
+				DEFE52151AC83E5B00198E69 /* LevelScene.swift in Sources */,
+				DEC981FA1AC2C8C300DD4C20 /* ClickEvent.swift in Sources */,
+				DEF9B3611B00850A00007AFC /* DeviceIDManager.swift in Sources */,
+				DEEE00AA1B73BF7500EA5157 /* EndViewController.swift in Sources */,
+				DEA25FE21AC0B219001F0B80 /* GameScene.swift in Sources */,
+				DEAC26F31AF647F600AD5702 /* m-image.swift in Sources */,
+				DEC981F61AC2B0D600DD4C20 /* MenuViewController.swift in Sources */,
+				DEAC27011AF647F600AD5702 /* math.m in Sources */,
+				DEAC26F11AF647F600AD5702 /* m-complex-math.swift in Sources */,
+				DEA260061AC147C3001F0B80 /* CoordinateRecorder.swift in Sources */,
+				DEAC26F81AF647F600AD5702 /* complex-math.swift in Sources */,
+				DEAC27091AF674D200AD5702 /* AIManager.swift in Sources */,
+				DEEE00AE1B775F0D00EA5157 /* AudioManager.swift in Sources */,
+				DEAC26FB1AF647F600AD5702 /* ndarray.swift in Sources */,
+				DEAC27021AF647F600AD5702 /* opencv.mm in Sources */,
+				DEAC26EF1AF647F600AD5702 /* io.swift in Sources */,
+				DEAC26F61AF647F600AD5702 /* m-operators.swift in Sources */,
+				DEAC26F91AF647F600AD5702 /* helper-functions.swift in Sources */,
+				DEAC26F51AF647F600AD5702 /* m-matrix.swift in Sources */,
+				DEAC27051AF647F600AD5702 /* ScalarArithmetic-bleed.swift in Sources */,
+				DEA25FE41AC0B219001F0B80 /* GameViewController.swift in Sources */,
+				DEAC26F01AF647F600AD5702 /* machine_learning.swift in Sources */,
+				DEAC27041AF647F600AD5702 /* operations-and-indexing.m in Sources */,
+				DEAC26FC1AF647F600AD5702 /* operators.swift in Sources */,
+				DEAC26FA1AF647F600AD5702 /* initing.swift in Sources */,
+				DE18D4001ACA6E0A001F68FD /* GameData.xcdatamodeld in Sources */,
+				DEAC26F21AF647F600AD5702 /* m-helper-functions.swift in Sources */,
+				DEF9B35F1B007EAD00007AFC /* UIDevice.swift in Sources */,
+				DEAC27001AF647F600AD5702 /* machine_learning.mm in Sources */,
+				DEA25FDE1AC0B219001F0B80 /* AppDelegate.swift in Sources */,
+				DEAC26FE1AF647F600AD5702 /* numbers.swift in Sources */,
+				DEAC26FD1AF647F600AD5702 /* simple-math.swift in Sources */,
+				DE59F61B1ACF3F05000DA5D4 /* LevelStatsViewController.swift in Sources */,
+				DEAC26F41AF647F600AD5702 /* m-initing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA25FED1AC0B219001F0B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA25FF81AC0B219001F0B80 /* ClickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEA25FF31AC0B219001F0B80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA25FD71AC0B219001F0B80 /* Click */;
+			targetProxy = DEA25FF21AC0B219001F0B80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DEA25FF91AC0B219001F0B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "swix/objc/swix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEA25FFA1AC0B219001F0B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "swix/objc/swix-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEA25FFC1AC0B219001F0B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Click/swix/objc",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Click/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duman.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Click/swix/objc/swix-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEA25FFD1AC0B219001F0B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Click/swix/objc",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Click/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duman.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Click/swix/objc/swix-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEA25FFF1AC0B219001F0B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ClickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duman.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Click.app/Click";
+			};
+			name = Debug;
+		};
+		DEA260001AC0B219001F0B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ClickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duman.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Click.app/Click";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEA25FD31AC0B219001F0B80 /* Build configuration list for PBXProject "Click" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA25FF91AC0B219001F0B80 /* Debug */,
+				DEA25FFA1AC0B219001F0B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA25FFB1AC0B219001F0B80 /* Build configuration list for PBXNativeTarget "Click" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA25FFC1AC0B219001F0B80 /* Debug */,
+				DEA25FFD1AC0B219001F0B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA25FFE1AC0B219001F0B80 /* Build configuration list for PBXNativeTarget "ClickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA25FFF1AC0B219001F0B80 /* Debug */,
+				DEA260001AC0B219001F0B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE18D3FE1ACA6E0A001F68FD /* GameData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE18D3FF1ACA6E0A001F68FD /* GameData.xcdatamodel */,
+			);
+			currentVersion = DE18D3FF1ACA6E0A001F68FD /* GameData.xcdatamodel */;
+			path = GameData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DEA25FD01AC0B219001F0B80 /* Project object */;
+}
